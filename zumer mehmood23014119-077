@@ -1,0 +1,25 @@
+<html>
+    <head>
+        <title>
+            ELEGANCE
+        </title>
+        <STYle>
+body{
+background-color: bisque
+;
+}
+p{
+    text-align: center;
+}
+h1{
+    text-align: center;
+}
+        </STYle>
+    </head>
+    <body>
+        <h1>
+            <b>DIVE INTO THE OCEAN OF FASHION</b>
+        </h1>
+        <P>RESTYLE YOUR WARDROBE WITH US</P>
+    </body>
+</html>
