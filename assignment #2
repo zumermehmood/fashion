@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Fashion Design - About</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-50 text-gray-900">
+  <header class="bg-white shadow">
+    <div class="container mx-auto px-4 py-4 flex justify-between items-center">
+      <h1 class="text-2xl font-bold">Fashion Design</h1>
+      <nav>
+        <ul class="flex space-x-6">
+          <li><a href="index.html" class="hover:text-pink-600">Home</a></li>
+          <li><a href="about.html" class="hover:text-pink-600 font-semibold text-pink-600">About</a></li>
+          <li><a href="services.html" class="hover:text-pink-600">Services</a></li>
+          <li><a href="gallery.html" class="hover:text-pink-600">Gallery</a></li>
+          <li><a href="contact.html" class="hover:text-pink-600">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container mx-auto px-4 py-10">
+    <h2 class="text-4xl font-semibold mb-6">About Us</h2>
+    <p class="mb-4 text-lg leading-relaxed">
+      Fashion Design is dedicated to bringing you the latest and most innovative fashion trends. Our team of designers works tirelessly to create unique and stylish collections.
+    </p>
+    <p class="mb-4 text-lg leading-relaxed">
+      We believe in quality, creativity, and sustainability in fashion. Join us on this journey to redefine style.
+    </p>
+  </main>
+
+  <footer class="bg-white border-t mt-20 py-6">
+    <div class="container mx-auto px-4 text-center text-gray-600">
+      &copy; 2024 Fashion Design. All rights reserved.
+    </div>
+  </footer>
+
+  <script>
+    // 1. Toggle navigation menu (example for mobile)
+    function toggleMenu() {
+      const nav = document.querySelector('nav ul');
+      if (nav.style.display === 'block') {
+        nav.style.display = 'none';
+      } else {
+        nav.style.display = 'block';
+      }
+    }
+
+    // 2. Change theme color
+    function changeThemeColor(color) {
+      document.body.style.backgroundColor = color;
+    }
+
+    // 3. Show alert message
+    function showAlert(message) {
+      alert(message);
+    }
+
+    // 4. Validate a simple form input (dummy example)
+    function validateInput(inputId) {
+      const input = document.getElementById(inputId);
+      if (!input || input.value.trim() === '') {
+        return false;
+      }
+      return true;
+    }
+
+    // 5. Calculate sum of two numbers
+    function sum(a, b) {
+      return a + b;
+    }
+
+    // 6. Format current date as YYYY-MM-DD
+    function formatDate() {
+      const d = new Date();
+      const year = d.getFullYear();
+      const month = ('0' + (d.getMonth() + 1)).slice(-2);
+      const day = ('0' + d.getDate()).slice(-2);
+      return `${year}-${month}-${day}`;
+    }
+
+    // 7. Scroll to top of the page
+    function scrollToTop() {
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    }
+
+    // 8. Highlight menu item by adding a class
+    function highlightMenuItem(selector) {
+      const item = document.querySelector(selector);
+      if (item) {
+        item.classList.add('text-pink-600', 'font-bold');
+      }
+    }
+
+    // 9. Open external link in a new tab
+    function openInNewTab(url) {
+      window.open(url, '_blank');
+    }
+
+    // 10. Simple DOM manipulation: add a paragraph to main
+    function addParagraph(text) {
+      const main = document.querySelector('main');
+      if (main) {
+        const p = document.createElement('p');
+        p.textContent = text;
+        p.className = 'mb-4 text-lg leading-relaxed';
+        main.appendChild(p);
+      }
+    }
+  </script>
+</body>
+</html>
